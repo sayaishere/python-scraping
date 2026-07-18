@@ -8,7 +8,6 @@ print(response.status_code)
 
 response_text=response.text
 
-# print(response_text)
 
 bautifulSoup=BeautifulSoup(response_text,"html.parser")
 quotes=bautifulSoup.find_all("div",class_="quote")
